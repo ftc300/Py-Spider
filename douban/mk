@@ -1,0 +1,5 @@
+scrapy list
+scrapy shell **
+scrapy crawl douban_spider
+scrapy crawl douban_spider -o test.csv
+scrapy crawl douban_spider -o test.json

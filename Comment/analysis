@@ -1,0 +1,13 @@
+jd
+2200+
+https://item.jd.com/28210193795.html
+https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv695&productId=28210193795&score=0&sortType=5&page=0&pageSize=10&isShadowSku=0&rid=0&fold=1
+https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv695&productId=28210193795&score=0&sortType=5&page=1&pageSize=10&isShadowSku=0&rid=0&fold=1
+https://item.jd.com/30399962937.html
+https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv470&productId=30399962937&score=0&sortType=5&page=0&pageSize=10&isShadowSku=0&fold=1
+
+规律
+=>
+https://sclub.jd.com/comment/productPageComments.action?productId={11111}&score=0&sortType=5&page=0&pageSize=10&isShadowSku=0&fold=1
+productCommentSummary: commentCount: 700,
+
