@@ -8,6 +8,19 @@ https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comme
 
 规律
 =>
-https://sclub.jd.com/comment/productPageComments.action?productId={11111}&score=0&sortType=5&page=0&pageSize=10&isShadowSku=0&fold=1
+https://sclub.jd.com/comment/productPageComments.action?productId=28210193795&score=0&sortType=5&page=0&pageSize=10
 productCommentSummary: commentCount: 700,
 
+
+xiaomi
+https://comment.huodong.mi.com/comment/entry/getList?goods_id=8625&v_pid=&orderby=1&showimg=0&profile_id=0&pagesize=5&pageindex=1&jsonpcallback=jQuery111301510225871124462_1540446534217&_=1540446534218
+https://comment.huodong.mi.com/comment/entry/getList?goods_id=8625&v_pid=&orderby=1&showimg=0&profile_id=0&pagesize=5&pageindex=2&jsonpcallback=jQuery111301510225871124462_1540446534217&_=1540446534221
+
+规律
+=>
+
+https://comment.huodong.mi.com/comment/entry/getList?goods_id=8625&v_pid=&orderby=1&showimg=0&profile_id=0&jsonpcallback=jQuery111301510225871124462_1540446534217&_=1540446534221&pagesize=20&pageindex=1
+total_count: 2394,
+page_total: 120,
+page_current: 1,
+server_time: 1540447387,
