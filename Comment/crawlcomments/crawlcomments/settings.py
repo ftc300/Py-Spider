@@ -93,5 +93,6 @@ MONGO_URI = 'localhost'
 MONGO_DATABASE = 'comments'
 MONGO_JD_COLLECTION = "jd_collection"
 MONGO_XM_COLLECTION = "xm_collection"
+MONGO_TM_COLLECTION = "tm_collection"
 
 PROXY_URL = 'http://localhost:5555/random'

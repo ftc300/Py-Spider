@@ -8,6 +8,7 @@ import pymongo
 import scrapy
 from crawlcomments.items import JDCommentItem
 from crawlcomments.items import XMCommentItem
+from crawlcomments.items import TMCommentItem
 
 
 # class CrawlcommentsPipeline(object):
@@ -16,11 +17,12 @@ from crawlcomments.items import XMCommentItem
 
 
 class MongoPipeline(object):
-    def __init__(self, mongo_uri, mongo_db, mongo_jd_collection,mongo_xm_collection):
+    def __init__(self, mongo_uri, mongo_db, mongo_jd_collection,mongo_xm_collection,mongo_tm_collection):
         self.mongo_uri = mongo_uri
         self.mongo_db = mongo_db
         self.mongo_jd_collection = mongo_jd_collection
         self.mongo_xm_collection = mongo_xm_collection
+        self.mongo_tm_collection = mongo_tm_collection
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -29,6 +31,7 @@ class MongoPipeline(object):
             mongo_db=crawler.settings.get('MONGO_DATABASE'),
             mongo_jd_collection=crawler.settings.get('MONGO_JD_COLLECTION'),
             mongo_xm_collection=crawler.settings.get('MONGO_XM_COLLECTION'),
+            mongo_tm_collection=crawler.settings.get('MONGO_TM_COLLECTION'),
         )
 
     def open_spider(self, spider):
@@ -36,6 +39,7 @@ class MongoPipeline(object):
         self.db = self.client[self.mongo_db]
         self.post_jd = self.db[self.mongo_jd_collection]
         self.post_xm = self.db[self.mongo_xm_collection]
+        self.post_tm = self.db[self.mongo_tm_collection]
 
     def close_spider(self, spider):
         self.client.close()
@@ -47,6 +51,9 @@ class MongoPipeline(object):
         if isinstance(item, XMCommentItem):
             data = dict(item)
             self.post_xm.insert(data)
+        if isinstance(item, TMCommentItem):
+            data = dict(item)
+            self.post_tm.insert(data)
         # if isinstance(item, UserItem) or isinstance(item, WeiboItem):
         #     self.db[item.collection].update({'id': item.get('id')}, {'$set': item}, True)
         # if isinstance(item, UserRelationItem):

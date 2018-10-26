@@ -8,7 +8,6 @@
 from scrapy import Item, Field
 
 
-
 # class CommentItem(scrapy.Item):
 #     content = scrapy.Field()
 #     time = scrapy.Field()
@@ -35,10 +34,12 @@ class JDCommentItem(Item):
     isMobile = Field()  # 是否来自手机
     days = Field()  # 天数
     commentTags = Field()  # 标签
+
+
 class XMCommentItem(Item):
     comment_id = Field()
     user_id = Field()
-    user_name  = Field()
+    user_name = Field()
     user_avatar = Field()
     comment_content = Field()
     comment_grade = Field()
@@ -62,3 +63,45 @@ class XMCommentItem(Item):
     comment_videos = Field()
     marks = Field()
     tags = Field()
+
+
+class TMCommentItem(Item):
+    auctionPicUrl = Field()
+    userInfo = Field()
+    displayRatePic = Field()
+    dsr = Field()
+    displayRateSum = Field()
+    appendComment = Field()
+    fromMemory = Field()
+    picsSmall = Field()
+    tmallSweetPic = Field()
+    rateDate = Field()
+    rateContent = Field()
+    fromMall = Field()
+    userIdEncryption = Field()
+    sellerId = Field()
+    displayUserLink = Field()
+    id = Field()
+    aliMallSeller = Field()
+    reply = Field()
+    pics = Field()
+    buyCount = Field()
+    userVipLevel = Field()
+    auctionSku = Field()
+    anony = Field()
+    displayUserNumId = Field()
+    goldUser = Field()
+    attributesMap = Field()
+    headExtraPic = Field()
+    aucNumId = Field()
+    displayUserNick = Field()
+    carServiceLocation = Field()
+    userVipPic = Field()
+    serviceRateContent = Field()
+    memberIcon = Field()
+    attributes = Field()
+    position = Field()
+    cmsSource = Field()
+    tamllSweetLevel = Field()
+    useful = Field()
+    displayUserRateLink = Field()
