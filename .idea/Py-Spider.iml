@@ -17,6 +17,10 @@
       <sourceFolder url="file://$MODULE_DIR$/CookiesPool" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Comment" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/douban" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/jd_spider" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Comment/crawlcomments" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Comment/crawlcomments/crawlcomments" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Comment/crawlcomments/crawlcomments/spiders" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
